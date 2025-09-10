@@ -707,12 +707,19 @@ button {
 .iconos a:nth-child(4) { animation: aparecer 1.2s ease-out forwards, glowing 3s infinite alternate; }
 
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .iconos img {
     width: 55px;
     height: 55px;
   }
+  .iconos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;        /* separación entre iconos */
+  flex-wrap: wrap;  /* si no caben, bajan a otra fila */
 }
+}
+
 
 
 
