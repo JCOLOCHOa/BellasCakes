@@ -644,11 +644,10 @@ button {
 
 .iconos {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   padding: 30px;
-
   border-radius: 25px;
   
 }
@@ -708,7 +707,8 @@ button {
 
 
 
-@media (max-width: 600px) {
+
+@media (max-width: 500px) {
   .iconos a {
     width: 70px;
     height: 70px;
@@ -719,6 +719,8 @@ button {
     max-height: 50%;
   }
 }
+
+
 
 
 
