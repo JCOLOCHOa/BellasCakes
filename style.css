@@ -666,9 +666,9 @@ button {
 }
 
 .iconos a img {
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
+  width: 60%;          /* se escala en ancho */
+  height: auto;        /* mantiene proporción, evita óvalo */
+  max-height: 60%;     /* evita que sobresalga verticalmente */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -713,6 +713,7 @@ button {
     height: 55px;
   }
 }
+
 
 
 
