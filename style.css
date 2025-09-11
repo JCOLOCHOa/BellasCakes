@@ -709,14 +709,41 @@ button {
 
 
 @media (max-width: 400px) {
+  .iconos {
+    gap: 5px;
+    padding: 15px;
+  }
+
   .iconos a {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
 
   .iconos a img {
-    width: 50%;
-    max-height: 50%;
+    width: 70%; /* un poco más grande en pantallas chicas */
+    max-height: 70%;
+  }
+}
+
+/* Efecto glowing */
+@keyframes glowing {
+  0% { box-shadow: 0 0 10px #A8581C; }
+  100% { box-shadow: 0 0 25px #A8581C; }
+}
+@media (max-width: 600px) {
+  .iconos {
+    gap: 5px;
+    padding: 15px;
+  }
+
+  .iconos a {
+    width: 60px;
+    height: 60px;
+  }
+
+  .iconos a img {
+    width: 70%; /* un poco más grande en pantallas chicas */
+    max-height: 70%;
   }
 }
 
